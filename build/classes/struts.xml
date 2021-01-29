@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<action name="GoLogin" class="com.action.GoLogin">
+			<result name="input">/Login.jsp</result>
+			<result name="success"  type="chain">IndexManager</result>
+		</action>
+		
+		
+		<action name="GoReg" class="com.action.GoReg">
+			<result name="success">/Login.jsp</result>
+		</action>
+		
+		<action name="Quit" class="com.action.Quit">
+			<result name="success">/Login.jsp</result>
+		</action>
+		<action name="PasswordUpdateSave" class="com.action.PasswordUpdateSave">
+			<result name="input">/PasswordUpdate.jsp</result>
+		</action>
+		
+		
+		
+		<action name="ClazzManager" class="com.action.ClazzManager">
+			<result name="success">/ClazzManager.jsp</result>
+		</action>
+		<action name="ClazzAddSave" class="com.action.ClazzAddSave">
+		</action>
+		<action name="ClazzUpdate" class="com.action.ClazzUpdate">
+		    <result name="success">/ClazzUpdate.jsp</result>
+		</action>
+		<action name="ClazzUpdateSave" class="com.action.ClazzUpdateSave">
+		</action>
+		<action name="ClazzDel" class="com.action.ClazzDel">
+		  <result name="success" type="chain">ClazzManager</result>
+		</action>
+		
+		<action name="FlowerAdd" class="com.action.FlowerAdd">
+			<result name="success">/FlowerAdd.jsp</result>
+		</action>
+		<action name="FlowerManager" class="com.action.FlowerManager">
+			<result name="success">/FlowerManager.jsp</result>
+		</action>
+		
+		<action name="IndexManager" class="com.action.IndexManager">
+			<result name="success">/Index.jsp</result>
+		</action>
+		
+		
+		<action name="FlowerAddSave" class="com.action.FlowerAddSave">
+		</action>
+		<action name="FlowerUpdate" class="com.action.FlowerUpdate">
+		    <result name="success">/FlowerUpdate.jsp</result>
+		</action>
+		<action name="FlowerUpdateSave" class="com.action.FlowerUpdateSave">
+		</action>
+		<action name="FlowerDel" class="com.action.FlowerDel">
+		  <result name="success" type="chain">FlowerManager</result>
+		</action>
+		
+		
+	</package>
+</struts>    

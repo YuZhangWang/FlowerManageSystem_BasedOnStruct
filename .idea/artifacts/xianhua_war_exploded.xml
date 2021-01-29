@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="xianhua:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/xianhua_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="xianhua" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="commons-fileupload-1.2.2.jar" module-name="xianhua" />
+          <element id="library" level="module" name="commons-io-2.0.1.jar" module-name="xianhua" />
+          <element id="library" level="module" name="commons-lang3-3.1.jar" module-name="xianhua" />
+          <element id="library" level="module" name="commons-logging-1.1.1.jar" module-name="xianhua" />
+          <element id="library" level="module" name="freemarker-2.3.19.jar" module-name="xianhua" />
+          <element id="library" level="module" name="jackson-mapper-asl-1.9.2.jar" module-name="xianhua" />
+          <element id="library" level="module" name="javassist-3.11.0.GA.jar" module-name="xianhua" />
+          <element id="library" level="module" name="mysql-connector-java-3.1.12-bin.jar" module-name="xianhua" />
+          <element id="library" level="module" name="ognl-3.0.6.jar" module-name="xianhua" />
+          <element id="library" level="module" name="struts2-core-2.3.8.jar" module-name="xianhua" />
+          <element id="library" level="module" name="xwork-core-2.3.8.jar" module-name="xianhua" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="xianhua/web/Web" />
+    </root>
+  </artifact>
+</component>
